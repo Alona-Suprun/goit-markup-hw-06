@@ -30,6 +30,7 @@
   --label-background: rgba(47, 48, 58, 0.8);
   --backdrop: rgba(0, 0, 0, 0.2);
   --card-overlay: rgba(33, 150, 243, 0.9);
+  --join-email-border: rgba(255, 255, 255, 0.3);
 }
 /*общие стили*/
 body {
@@ -580,10 +581,32 @@ p {
 .socials-white {
   color: var(--main-background-color);
 }
-/*.join-form {
-  margin-left: 215px;
-}*/
+/*Форма подписки*/
+.join-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 93px;
+}
+.join-fild {
+  display: flex;
+  margin-top: 20px;
+}
+.join-email {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+
+  font-size: 16px;
+  font-family: inherit;
+  color: var(--footer-contacts);
+  border: 1px solid var(--join-email-border);
+  border-radius: 4px;
+  background-color: var(--footer-background-color);
+}
 .join-button {
+  position: relative;
+  margin-left: 12px;
   padding: 10px 0px;
   min-width: 200px;
   border: 0px solid transparent;
@@ -598,6 +621,14 @@ p {
   letter-spacing: 0.06em;
 
   cursor: pointer;
+}
+.join-button-text {
+  margin-right: 28px;
+}
+.join-icon {
+  position: absolute;
+  top: 13px;
+  left: 148px;
 }
 
 /*модалка*/
