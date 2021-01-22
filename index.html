@@ -356,24 +356,27 @@
     </li>
 </ul>
 </div>
-<div>
     <form class="join-form">
-        <label>
-            <div class="join-text"> Подпишитесь на рассылку</div>
-            <div class="join-fild"><input class="join-email" type="email" name="email" placeholder="E-mail"/>
-        </label>
+        <label for="email" class= "join-text"> Подпишитесь на рассылку</label>
+                <div class="join-fild"><input id="email" class="join-email" type="email" name="email" placeholder="E-mail"/>
         <button class="join-button" type="submit"><span class="join-button-text">Подписаться</span><svg class="join-icon" width="24px" height="24px">
             <use href="./img/symbol-defs.svg#icon-icon-send"></use>
         </svg></button></div>
     </form>
 </div>
-        </div>
 </footer>
+<!--модалка-->>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal"> <button class="close-modal" type="button" data-modal-close>
         <svg class="" width="18px" height="18px">
         <use href="./img/symbol-defs.svg#icon-close-black"></use>
-    </svg></button></div>
+    </svg></button>
+    <div class="modal-form">
+        <p>Оставьте свои данные, мы вам перезвоним</p>
+<form class="">
+
+</form></div>
+    </div>
 </div>
 <script src="./js/modal.js"></script>
 </body>
