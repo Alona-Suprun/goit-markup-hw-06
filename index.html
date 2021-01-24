@@ -368,13 +368,51 @@
 <!--модалка-->>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal"> <button class="close-modal" type="button" data-modal-close>
-        <svg class="" width="18px" height="18px">
+        <svg class="close-modal-icon" width="18px" height="18px">
         <use href="./img/symbol-defs.svg#icon-close-black"></use>
     </svg></button>
     <div class="modal-form">
-        <p>Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal-header">Оставьте свои данные, мы вам перезвоним</p>
 <form class="">
-
+<ul class="list">
+    <li>
+<label class="modal-form-label">Имя
+<div class="input-area"><input class="form-input" type="text" name="user-name">
+<svg class="modal-icon" width="18px" height="18px">
+    <use href="./img/symbol-defs.svg#icon-person-black"></use>
+</svg></div>
+</label>
+    </li>
+    <li class="modal-form-field">
+<label class="modal-form-label">Телефон
+<div class="input-area"><input class="form-input" type="tel" name="user-tel">
+<svg class="modal-icon" width="18px" height="18px">
+    <use href="./img/symbol-defs.svg#icon-phone-black"></use>
+</svg></div>
+</label>
+    </li>
+    <li class="modal-form-field">
+<label class="modal-form-label">Почта
+<div class="input-area"><input class="form-input" type="email" name="user-email">
+<svg class="modal-icon" width="18px" height="18px">
+    <use href="./img/symbol-defs.svg#icon-email-black"></use>
+</svg></div>
+</label>
+    </li>
+    <li class="modal-form-field">
+<label class="modal-form-label">Комментарий
+<textarea class="form-input textarea" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+</label>
+    </li>
+    <li>
+<label class="checkbox-label">
+<input type="checkbox" name=""/>
+            Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a>
+</label>
+    </li>
+    <li class="modal-form-button">
+<button class="modal-button" type="submit">Отправить</button>
+</li></ul>
 </form></div>
     </div>
 </div>
