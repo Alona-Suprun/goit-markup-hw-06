@@ -376,28 +376,25 @@
 <form class="">
 <ul class="list">
     <li>
-<label class="modal-form-label">Имя
-<div class="input-area"><input class="form-input" type="text" name="user-name">
+<label class="modal-form-label" for="user-name">Имя</label>
+<div class="input-area"><input class="form-input" type="text" name="user-name" id="user-name" autofocus>
 <svg class="modal-icon" width="18px" height="18px">
     <use href="./img/symbol-defs.svg#icon-person-black"></use>
 </svg></div>
-</label>
     </li>
     <li class="modal-form-field">
-<label class="modal-form-label">Телефон
-<div class="input-area"><input class="form-input" type="tel" name="user-tel">
+<label class="modal-form-label" for="user-tel">Телефон</label>
+<div class="input-area"><input class="form-input" type="tel" name="user-tel" id="user-tel">
 <svg class="modal-icon" width="18px" height="18px">
     <use href="./img/symbol-defs.svg#icon-phone-black"></use>
 </svg></div>
-</label>
     </li>
     <li class="modal-form-field">
-<label class="modal-form-label">Почта
-<div class="input-area"><input class="form-input" type="email" name="user-email">
+<label class="modal-form-label" for="user-emai">Почта</label>
+<div class="input-area"><input class="form-input" type="email" name="user-email" id="user-emai">
 <svg class="modal-icon" width="18px" height="18px">
     <use href="./img/symbol-defs.svg#icon-email-black"></use>
 </svg></div>
-</label>
     </li>
     <li class="modal-form-field">
 <label class="modal-form-label">Комментарий
@@ -406,8 +403,9 @@
     </li>
     <li>
 <label class="checkbox-label">
-<input type="checkbox" name=""/>
-            Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a>
+<input class="checkbox-box visually-hidden" type="checkbox" name=" "/>
+<span class="checkbox"></span>
+            <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a></span>
 </label>
     </li>
     <li class="modal-form-button">

@@ -690,14 +690,16 @@ p {
   padding: 40px;
   width: 528px;
 }
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .input-area:focus-within > .modal-icon {
   color: var(--accent-color);
-}
-.modal-icon {
-  fill: currentColor;
-}
-.input-area:focus-within > .form-input {
-  border-color: var(--accent-color);
 }
 .modal-form-field {
   margin-top: 10px;
@@ -724,15 +726,16 @@ p {
   font: inherit;
   border-radius: 4px;
   border: 1px solid var(--form-input);
+  cursor: pointer;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-area:focus-within > .form-input,
+.modal-form-label:focus-within > .textarea {
+  border-color: var(--accent-color);
 }
 .input-area {
   position: relative;
-}
-.modal-icon {
-  position: absolute;
-  top: 55%;
-  left: 12px;
-  transform: translateY(-55%);
 }
 .textarea {
   height: 120px;
@@ -741,11 +744,14 @@ p {
   font-size: 14px;
   line-height: 1.14;
   resize: none;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 .checkbox-label {
+  position: relative;
   display: block;
   margin-top: 20px;
   text-align: center;
@@ -756,6 +762,33 @@ p {
   text-decoration-skip-ink: none;
   text-decoration: underline;
   color: var(--accent-color);
+}
+.checkbox {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--main-text-color);
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.checkbox-text {
+  margin-left: 24.38px;
+}
+.checkbox-box:checked + .checkbox {
+  border-color: transparent;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  background-image: url("../img/icon-check.svg");
+  background-size: contain;
+  background-origin: border-box;
 }
 .modal-form-button {
   text-align: center;
