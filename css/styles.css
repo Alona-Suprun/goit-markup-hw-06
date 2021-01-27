@@ -64,6 +64,24 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+.section {
+  padding: 94px 0px;
+}
+.button {
+  min-width: 200px;
+  border: 0px solid transparent;
+  border-radius: 4px;
+
+  color: var(--main-background-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+}
 /*хедер*/
 .site-nav {
   display: flex;
@@ -202,24 +220,8 @@ p {
 .hero-button {
   margin-top: 30px;
   padding: 10px 32px;
-  min-width: 200px;
-  border: 0px solid transparent;
-  border-radius: 4px;
-
-  color: var(--main-background-color);
-  background-color: var(--accent-color);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-
-  cursor: pointer;
 }
-/*общие для секций*/
-.section {
-  padding: 94px 0px;
-}
+
 /*преимущества*/
 .advantages {
   display: flex;
@@ -608,20 +610,8 @@ p {
   position: relative;
   margin-left: 12px;
   padding: 10px 0px;
-  min-width: 200px;
-  border: 0px solid transparent;
-  border-radius: 4px;
-
-  color: var(--main-background-color);
-  background-color: var(--accent-color);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-
-  cursor: pointer;
 }
+
 .join-button-text {
   margin-right: 28px;
 }
@@ -796,18 +786,4 @@ p {
 .modal-button {
   margin-top: 30px;
   padding: 10px 0px;
-  min-width: 200px;
-
-  border: 0px solid transparent;
-  border-radius: 4px;
-
-  color: var(--main-background-color);
-  background-color: var(--accent-color);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-
-  cursor: pointer;
 }
